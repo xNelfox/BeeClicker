@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BeeClicker</title>
+</head>
+<body>
+    <div id="gameCointainer">
+        <div id="left">
+            <div id="up">
+                <img src="Assets/Images/Currency/HoneyBar.png" alt="HoneyBar" id="honeyImg">
+                <span id="honey">0</span>
+            </div>
+            <div id="bottom">
+                <img src="Assets/Images/Bee/normal.png" alt="Bee" id="bee">
+            </div>
+        </div>  
+        <div id="right">
+            <div id="shop">
+                <section id="title">
+                    <span>Shop</span>
+                </section>
+
+                <section id="section">
+                    <span id="line"></span>
+                    <span>Upgrades</span>
+                    <span id="line"></span>
+                </section>
+
+                <article id="upgrades">
+                    <section class="upgrade" id="honeyUp">
+                        <div id="upLeft">
+                            <span id="upTitle">Honey</span>
+                            <span id="upDesc">Collect two times more honey from bee. You have: </span><span id="honeyUpHowManyBought">0</span>
+                            <section id="cost">
+                                <img src="Assets/Images/Currency/HoneyBar.png" alt="HoneyBar" id="honeyUpImg">
+                                <span id="honeyUpCost" class="upCost"></span>
+                            </section>
+                        </div>
+                        <div id="upRight">
+                            <img src="Assets/Images/Upgrades/HoneyUp.png" alt="HoneyUpgrade">
+                        </div>
+                    </section>
+                    <section class="upgrade" id="clickerUp">
+                        <div id="upLeft">
+                            <span id="upTitle">Clicker</span>
+                            <span id="upDesc">Automaticly clicks your bee every <span id="clickerSeconds">10</span> secounds. You have: </span><span id="clickerUpHowManyBought">0</span>
+                            <section id="cost">
+                                <img src="Assets/Images/Currency/HoneyBar.png" alt="HoneyBar" id="honeyUpImg">
+                                <span id="clickerUpCost" class="upCost"></span>
+                            </section>
+                        </div>
+                        <div id="upRight">
+                            <img src="Assets/Images/Upgrades/ClickerUp.png" alt="ClickerUpgrade">
+                        </div>
+                    </section>
+                    <section class="upgrade" id="clickerSpeedUp">
+                        <div id="upLeft">
+                            <span id="upTitle">Clicker Speed</span>
+                            <span id="upDesc">Makes your clicker faster. You have: </span><span id="clickerSpeedUpHowManyBought">0</span>
+                            <section id="cost">
+                                <img src="Assets/Images/Currency/HoneyBar.png" alt="HoneyBar" id="honeyUpImg">
+                                <span id="clickerSpeedUpCost" class="upCost"></span>
+                            </section>
+                        </div>
+                        <div id="upRight">
+                            <img src="Assets/Images/Upgrades/SpeedClickerUp.png" alt="ClickerSpeedUpgrade">
+                        </div>
+                    </section>
+                </article>
+
+                <section id="section">
+                    <span id="line"></span>
+                    <span>Unlock</span>
+                    <span id="line"></span>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <audio id="music">
+        <source src="Assets/Audio/Music.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="clickSound">
+        <source src="Assets/Audio/clickSound.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="main.js"></script>
+</body>
+</html>
